@@ -1,0 +1,50 @@
+@import "../../variables";
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+
+  &-header,
+  &-row,
+  &-cell {
+    padding: 10px;
+    text-align: left;
+  }
+
+  &-header {
+    background-color: #fff;
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 14px;
+    color: #b1b1b1;
+  }
+
+  &-row:nth-of-type(odd) {
+    background-color: #f8f8f8;
+  }
+
+  &-row:nth-of-type(even) {
+    background-color: #fff;
+  }
+
+  &-button {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-icon {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.button-container {
+  display: flex;
+  gap: 16px;
+}

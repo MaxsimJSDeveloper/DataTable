@@ -1,6 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-// Тип для співробітника
 interface Employee {
   id: number;
   name: string;
@@ -9,7 +8,6 @@ interface Employee {
   role: "reporter" | "botAnalyst" | "salesManager" | "broadcaster" | "marketer";
 }
 
-// Початковий стан
 interface EmployeeState {
   employees: Employee[];
 }
